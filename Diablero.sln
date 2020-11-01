@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diablero", "Diablero.csproj", "{BA7775FC-2905-42E3-A93A-7C2D2FF8AB56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TumbasLibrary", "..\TumbasLibrary\TumbasLibrary.csproj", "{F5138998-A861-4B33-96EB-BFBE5A1648EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TumbasDemons", "TumbasDemons\TumbasDemons.csproj", "{DE7E7AC6-5A3D-4A03-8426-8C7725847C70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA7775FC-2905-42E3-A93A-7C2D2FF8AB56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA7775FC-2905-42E3-A93A-7C2D2FF8AB56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA7775FC-2905-42E3-A93A-7C2D2FF8AB56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA7775FC-2905-42E3-A93A-7C2D2FF8AB56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5138998-A861-4B33-96EB-BFBE5A1648EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5138998-A861-4B33-96EB-BFBE5A1648EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5138998-A861-4B33-96EB-BFBE5A1648EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5138998-A861-4B33-96EB-BFBE5A1648EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE7E7AC6-5A3D-4A03-8426-8C7725847C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7E7AC6-5A3D-4A03-8426-8C7725847C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7E7AC6-5A3D-4A03-8426-8C7725847C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7E7AC6-5A3D-4A03-8426-8C7725847C70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCB861D8-BBF6-4EAE-A2A3-021029EF12D3}
+	EndGlobalSection
+EndGlobal
