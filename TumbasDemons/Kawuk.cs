@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using TumbasLibrary;//Added
 
+
 namespace TumbasDemons
 {
-    public class Wendigo : Monster
+    public class Kawuk : Monster
     {
         //we will be creating a child monster with at least one unique property 
 
@@ -18,7 +19,7 @@ namespace TumbasDemons
 
         //ctors
         //FQCtor
-        public Wendigo(string name, int life, int maxLife, int hitChance, int block, int minDamage,
+        public Kawuk(string name, int life, int maxLife, int hitChance, int block, int minDamage,
             int maxDamage, string description, bool isScary) : base(name, life, maxLife, hitChance,
                 block, minDamage, maxDamage, description)
         {
@@ -27,27 +28,27 @@ namespace TumbasDemons
         }
 
         //set some values for a basic monster of this type in the default ctor
-        public Wendigo()
+        public Kawuk()
         {
             //SET Max Values first!
-            MaxLife = 6;
-            MaxDamage = 3;
-            Name = "Swift Wendigo";
-            Life = 6;
+            MaxLife = 10;
+            MaxDamage = 4;
+            Name = "Kawuk horde";
+            Life = 8;
             HitChance = 20;
-            Block = 20;
-            MinDamage = 1;
-            Description = "It craves human flesh and moves its position faster than your eyes can keep up";
+            Block = 22;
+            MinDamage = 3;
+            Description = "The horde tracks you and could smell you enter the room. These reptilian creatures walk on two feet and eat humans.";
             IsScary = false;
         }
 
         //Methods
         public override string ToString()
         {
-            return base.ToString() + (IsScary ? "Scary" : "Not so scary");
+            return base.ToString() + (IsScary ? "Scary" : "Not so Scary");
         }
 
-        //override the block to say if the wendigo is scary they get a bonus 50% to their block
+        //override the block to say if the kawuk is scary they get a bonus 50% to their block
         public override int CalcBlock()
         {
             int calculatedBlock = Block;
@@ -62,6 +63,5 @@ namespace TumbasDemons
             //return IsFluffy ? base.CalcBlock() + (base.CalcBlock() / 2) : base.CalcBlock();
 
         }
-
     }
 }

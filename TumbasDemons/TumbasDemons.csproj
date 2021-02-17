@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Jenglot.cs" />
+    <Compile Include="Kawuk.cs" />
+    <Compile Include="Nahual.cs" />
     <Compile Include="Wendigo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

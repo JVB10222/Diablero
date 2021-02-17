@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using TumbasLibrary;//Added
 
+
 namespace TumbasDemons
 {
-    public class Wendigo : Monster
+    public class Nahual : Monster
     {
         //we will be creating a child monster with at least one unique property 
 
@@ -18,7 +19,7 @@ namespace TumbasDemons
 
         //ctors
         //FQCtor
-        public Wendigo(string name, int life, int maxLife, int hitChance, int block, int minDamage,
+        public Nahual(string name, int life, int maxLife, int hitChance, int block, int minDamage,
             int maxDamage, string description, bool isScary) : base(name, life, maxLife, hitChance,
                 block, minDamage, maxDamage, description)
         {
@@ -27,24 +28,24 @@ namespace TumbasDemons
         }
 
         //set some values for a basic monster of this type in the default ctor
-        public Wendigo()
+        public Nahual()
         {
             //SET Max Values first!
-            MaxLife = 6;
-            MaxDamage = 3;
-            Name = "Swift Wendigo";
-            Life = 6;
-            HitChance = 20;
+            MaxLife = 15;
+            MaxDamage = 9;
+            Name = "Tall Nahual";
+            Life = 15;
+            HitChance = 15;
             Block = 20;
-            MinDamage = 1;
-            Description = "It craves human flesh and moves its position faster than your eyes can keep up";
+            MinDamage = 2;
+            Description = "A sorcerer once human that has transformed into an animal. It emits a terrifying laughter and grunt. It mocks you.";
             IsScary = false;
         }
 
         //Methods
         public override string ToString()
         {
-            return base.ToString() + (IsScary ? "Scary" : "Not so scary");
+            return base.ToString() + (IsScary ? "Scary" : "Not so Scary");
         }
 
         //override the block to say if the wendigo is scary they get a bonus 50% to their block
@@ -62,6 +63,5 @@ namespace TumbasDemons
             //return IsFluffy ? base.CalcBlock() + (base.CalcBlock() / 2) : base.CalcBlock();
 
         }
-
     }
 }
